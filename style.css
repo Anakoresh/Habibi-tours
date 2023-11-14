@@ -1,0 +1,736 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: rgb(34, 45, 58);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: rgb(34, 45, 58);
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #111;
+    font-weight: 700;
+}
+
+mark {
+    color: #fff; 
+    background: none;
+}
+
+.btn {
+    font-weight: 700;
+    padding: 15px;
+    background-color: rgba(48, 72, 98, 0.6);
+    color: #fff;
+}
+
+.btn:hover {
+    color: #111;
+    box-shadow: 1px 2px 10px;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.page-top-adaptive {
+    display: none;
+}
+
+.main {
+    padding-bottom: 50px;
+    padding-top: 120px; 
+    background: linear-gradient(180deg, rgba(156,174,196,1) 7%, rgba(135,161,194,1) 40%, rgba(127,141,159,1) 80%);
+}
+
+.main, .home {
+    min-height: 80vh;
+}
+
+.container {
+    margin: 10px auto;
+    padding: 5px;
+    max-width: 920px;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.go-back {
+    display: none;
+}
+
+.menu-item {
+    padding: 0 20px;
+    border-left: 2px solid #304862;
+}
+
+.menu-item:first-child {
+    border-left: none;
+}
+
+/* Page: Home */
+
+.home {
+    background-image: url("img/ella2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 55px;
+}
+
+.home-left {
+    width: 70%;
+}
+
+.home-right {
+    padding-top: 200px;
+    width: 30%;
+}
+
+.main-title {
+    padding: 10px 5px;
+    font-size: 40px;
+}
+
+.main-text {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px 5px;
+    width: 80%;
+    background-color: rgba(48, 72, 98, 0.6);
+    color: #fff;
+    line-height: 1.6;
+}
+
+.home-btn {
+    background-color: #e8594e;
+}
+
+.home-title2 {
+    text-align: center;
+    color: #fff;
+}
+
+.wrapper-slide {
+    column-gap: 7px;
+}
+
+.home-right-tour {
+    width: 100%;
+    margin: 10px 0;
+    flex-direction: column;
+    box-shadow: 1px 2px 10px;
+}
+
+.home-tour-img {
+    display: block;
+    height: 140px;
+    overflow: hidden;
+}
+
+.home-right-tour img {
+    width: 100%;
+}    
+
+.home-tour-img:hover {
+    opacity: 50%;
+}
+
+.home-tour-info {
+    width: 100%;
+    display: block;
+    background-color: rgba(48, 72, 98, 0.8);
+    margin-top: 5px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.home-tour-info h3 {
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgba(48, 72, 98, 0.85);
+    border-top: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer h2 {
+    color: #e8594e;
+    margin-bottom: 5px;
+}
+
+.contacts p {
+    color: #fff;
+    letter-spacing: 0.05em;
+}
+
+.contact p:first-child {
+    padding-right: 4px;
+}
+
+/* Page: Tours */
+
+.tours-wrapper {
+    margin-top: 20px;
+}
+
+.card {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 130px;
+    background-color: rgba(48, 72, 98, 0.6);
+    box-shadow: 1px 2px 10px;
+    transition: all 500ms ease-in-out;
+}
+
+.card-content {
+    padding: 8px 16px;
+    width: 70%;
+    position: relative;
+    flex-direction: column;
+}
+
+.card-content h3 {
+    text-align: center;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #fff;
+    padding: 4px 0;
+    line-height: 1.6;
+}
+
+.card-read-more p:hover {
+    color: #e8594e;
+}
+
+.card-read-more p{
+    font-weight: 700;
+    color: #fff;
+    padding-right: 7px;
+}
+
+.tour-image {
+    height: 100%;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.days {
+    padding: 7px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    background-color: #304862;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.price {
+    column-gap: 7px;
+    font-weight: 700;
+}
+
+.price p:first-child {
+    font-size: 14px;
+}
+
+.price p:nth-child(2) {
+    font-size: 22px;
+}
+
+/* Pages: Tour*/
+
+.left-side {
+    width: 60%;
+    padding-bottom: 25px;
+}
+
+.right-side {
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 2px 10px;
+}
+
+.price-info {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.price-info p {
+    padding: 0 10px;
+}
+
+.price-info p:first-child {
+    border-right: 1px solid #304862;
+    padding-left: 5px;
+}
+
+.tour-text {
+    margin-top: 20px;
+    padding: 0 20px 0 5px;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.left-side a, .tour-bottom a {
+    background-color: #e8594e;
+}
+
+.tour-middle {
+    margin-top: 50px;
+}
+
+.tour-middle h2, .about-us h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.route-gallery {
+    margin-top: 10px;
+}
+
+.gallery-item {
+    flex: 1;
+    margin: 5px;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    position: relative;
+    box-shadow: 1px 2px 10px;
+}
+
+.gallery-item:first-child {
+    margin-left: 0;
+}
+
+.gallery-item:last-child {
+    margin-right: 0;
+}
+
+.active {
+    flex: 7;
+}
+
+.gallery-item h3 {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #304862;
+    opacity: 0;
+}
+
+.gallery-item.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+.tour-bottom {
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+.route-list h3 {
+    font-size: 24px;
+}
+
+.route-list ul {
+    list-style: square;
+    margin-left: 20px;
+    margin-top: 10px; 
+    line-height: 1.6;
+}
+
+/* Page: Contact us */
+
+form {
+    margin-top: 20px;
+    width: 50%;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form input {
+    height: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 1px solid #304862;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form input.error {
+    border-color: red;
+}
+
+form button {
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #304862;
+    font-size: 22px;
+}
+
+/* Page: About us */
+
+.main.about-us {
+    background-image: url(img/ella2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-us h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+svg {
+    box-shadow: 1px 2px 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-right: 10px;
+}
+
+.reasons {
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.reason {
+    width: calc(100% / 2);
+    margin-top: 20px;
+}
+
+.reason p {
+    width: 80%;
+}
+
+/* Adaptive */
+
+@media(max-width: 1050px) {
+    .header {
+        display: none;
+        background: linear-gradient(180deg, rgba(156,174,196,1) 7%, rgba(135,161,194,1) 40%, rgba(127,141,159,1) 80%);
+    }
+
+    .header .container {
+        position: relative;
+    }
+
+    .go-back {
+        display: block;
+        color: #111;
+        font-size: 30px;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        text-decoration: underline;
+    }
+
+    .menu {
+        margin: 90px 0;
+        text-align: center;
+    }
+
+    .menu-item {
+        display: block;
+        border: none;
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0 0 30px 0;
+        padding: 0;
+    }
+
+    .header .btn {
+        font-size: 34px;
+        display: block;
+        text-align: center;
+    }
+
+    .home, .main, .header {
+        padding-top: 30px;
+        min-height: 100vh;
+    }
+
+    .container {
+        display: block;
+        max-width: 650px;
+    }
+
+    .page-top-adaptive {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .menu-icon {
+        height: 30px;
+    }
+
+    mark {
+        color: inherit;
+    }
+
+    .home-left {
+        width: 100%;
+    }
+
+    .main-text {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .home-right {
+        padding-top: 80px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .home-right-tour {
+        margin: 40px 0;
+    }
+
+    .home-tour-img {
+        height: 350px;
+    }
+
+    .home-tour-info {
+        margin-top: 10px;
+    }
+
+    .arrow img {
+        width: 30px;
+    }
+
+    .card {
+        height: 150px;
+    }
+
+    .route-gallery {
+        display: block;
+    }
+
+    .gallery-item {
+        height: 100px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .active {
+        height: 300px;
+    }
+
+    form, .reason {
+        width: 100%;
+    }
+
+    .footer h2 {
+        margin-bottom: 10px;
+    }
+
+    .contacts {
+        display: block;
+    }
+
+    .contact {
+        padding-top: 10px;
+    }
+
+    .reasons {
+        display: block;
+        background-color: rgba(48, 72, 98, 0.6);
+        padding: 10px 0;
+    }
+
+    .reason:first-child {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 700px) {
+    .container {
+        max-width: 450px;
+    }
+
+    .home-tour-img {
+        height: 200px;
+    }
+
+    .card {
+        height: 170px;
+    }
+
+    .card-read-more p {
+        font-size: 18px;
+    }
+
+    .tour-top {
+        flex-direction: column-reverse;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .right-side {
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .price-info {
+        margin-top: 0;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .container {
+        max-width: 350px;
+    }
+
+    .menu-icon {
+        height: 25px;
+    }
+
+    .home-tour-img {
+        height: 150px;
+    }
+
+    .card {
+        height: 240px;
+    }
+
+    .card-content {
+        width: 65%;
+        padding: 5px;
+    }
+
+    .tour-image {
+        width: 35%;
+    }
+
+    .price p:nth-child(2), .card-read-more p {
+        font-size: 16px;
+    }
+
+    .card-read-more p {
+        width: 55px;
+    }
+
+    .tour-bottom {
+        display: block;
+    }
+
+    .route-list {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+
+    .container {
+        max-width: 250px;
+    }
+
+    .main-title {
+        font-size: 30px;
+    }
+
+    .home-tour-img {
+        height: 120px;
+    }
+
+    .arrow img {
+        width: 20px;
+    }
+
+    .card-content {
+        width: 60%;
+    }
+
+    .tour-image {
+        width: 40%;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .card-content-bottom {
+        display: block;
+    }
+
+    .price p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    .card-read-more {
+        padding-top: 5px;
+    }
+
+    .card-read-more p {
+        width: 100px;
+    }
+
+    .contact {
+        display: block;
+        padding-top: 5px;
+    }
+
+}
